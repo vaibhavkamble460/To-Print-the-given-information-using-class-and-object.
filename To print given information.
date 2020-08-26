@@ -1,0 +1,32 @@
+package employee1;
+
+/**
+ *
+ * @author Lenovo
+ */
+public class Employee1 {
+String name;
+int yoj;
+String address;
+public Employee1(String name,int yoj,String address){
+this.name=name;
+this.yoj=yoj;
+this.address=address;
+}
+public void printEmployee(){
+System.out.println(name+"    "+yoj+"    "+address);}
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        Employee1 e1,e2,e3;
+    e1 = new Employee1("Robert",1994,"64C-WallsStreet");
+        e2 = new Employee1("Sam",2000,"68D-WallsStreet");
+            e3 = new Employee1("John",1999,"26B-WallsStreet");
+            System.out.println("Name"+"    "+"Year of joining"+"     "+"Adress");
+            e1.printEmployee();
+            e2.printEmployee();
+            e3.printEmployee();
+    }
+    
+}
